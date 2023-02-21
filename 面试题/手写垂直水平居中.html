@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /*垂直居中
+        1.position + margin 需要宽高 
+        2.position + margin :auto 需要宽高
+        3.display:table-cell +  vertical-align: middle + margin:auto ;需要有宽度
+        4.position+transfrom 不需要固定宽高
+        5.flex布局 不需要固定宽高
+        */
+        .content{
+            width: 200px;
+            height: 300px;
+            background-color: #ccc;
+           position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="content">测试文字</div>
+    </div>
+</body>
+</html>
